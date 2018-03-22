@@ -1,0 +1,15 @@
+.content{
+	display:block;
+	.title{
+		font-size:19px;
+	}
+	.detail{
+		font-size:15px;
+		ul{
+			margin-top:20px;
+			li{
+				margin-bottom:25px;
+			}
+		}
+	}
+}

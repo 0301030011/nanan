@@ -1,0 +1,17 @@
+.blur{
+	z-index: 1;
+	overflow: hidden;
+	padding:10px;
+	box-sizing:border-box;
+	color:#fff;
+	&::after{//伪元素
+		background-image: url('../image/bg.jpg');
+		background-size: cover;
+		filter: blur(35px);
+		background-attachment: fixed;
+		content: '';
+		position: absolute;
+		top: -30px;left: 0;right: 0;bottom: 0;
+		z-index: -1;
+	}
+}

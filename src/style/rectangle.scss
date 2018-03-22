@@ -1,0 +1,6 @@
+@mixin rectangle($width,$height){
+	width:$width;
+	height:$height;
+	border-radius:5px;
+	overflow:hidden;
+}

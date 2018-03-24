@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		<div class="title">关于我们</div>
+		<div class="title" @click="jump">关于我们</div>
 	</div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods:{
+    jump:function(){
+      this.$router.push('/aboutus');
     }
   }
 }

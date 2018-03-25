@@ -1,0 +1,64 @@
+@import 'blur.scss';
+@import 'rectangle.scss';
+@import 'flex.scss';
+.content{
+    @include rectangle(1136px,680px);
+    @extend .flex;
+}
+.service{
+    @include rectangle(288px,100%);
+    @extend .blur;
+}
+
+.center-group{
+    @include rectangle(648px,100%);
+    @extend .flex;
+    flex-direction:column;
+    .weather{
+        @include rectangle(100%,160px);
+        @extend .blur;
+    }
+    .center-group-footer{
+        @include rectangle(100%,500px);
+        @extend .flex;
+        .footer-left{
+            @include rectangle(340px,100%);
+            @extend .flex;
+            flex-wrap:wrap;
+            .older,.volunteer{
+                @include rectangle(160px,160px);
+                @extend .blur;
+            }
+            .activity{
+                @include rectangle(100%,320px);
+                margin-top:20px;
+                @extend .blur;
+            }
+        }
+        .policy{
+            @include rectangle(288px,100%);
+            @extend .blur;
+        }
+    }
+}
+
+.right-group{
+    @include rectangle(160px,100%);
+    @extend .flex;
+    flex-direction:column;
+    .persional,.about{
+        @include rectangle(160px,160px);
+        @extend .blur;
+    }
+    .message{
+        @include rectangle(160px,320px);
+        @extend .blur;
+        .persional,.about{
+        @include rectangle(160px,160px);
+        }
+    .message{
+        @include rectangle(160px,320px);
+        margin:20px 0;
+        }
+    }
+}

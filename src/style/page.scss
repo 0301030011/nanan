@@ -1,0 +1,47 @@
+@import 'rectangle.scss';
+@import 'flex.scss';
+@import 'blur.scss';
+.content{
+    @include rectangle(1136px,680px);
+    color:#fff;
+    .title{
+        font-size:25px;
+        margin-bottom:10px;
+    }
+    ul{
+      @include rectangle(100%,87%);
+      overflow: scroll;
+      li{
+        @include rectangle(100%,89px);
+        color:#333;
+        background-color: #fff;
+        margin-bottom:10px;
+        overflow: hidden;
+        padding:10px;
+        box-sizing:border-box;
+        .item-title{
+            font-size:20px;
+            font-weight: bold;
+        }
+        .item-content{
+            font-size:18px;
+        }
+      }
+    }
+}
+
+// .arrow{
+//     display:flex;
+//     @include rectangle(100px,40px);
+//     margin:0 auto;
+//     div{
+//         background-color: #fff;
+//         @include rectangle(40px,40px);
+//         color:black;
+//         line-height: 40px;
+//         text-align:center;
+//         font-size:20px;
+//         border-radius:50%;
+//         color:transparent；
+//     }
+// }

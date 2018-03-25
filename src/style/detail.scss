@@ -1,0 +1,19 @@
+@import 'rectangle.scss';
+@import 'flex.scss';
+@import 'blur.scss';
+.content{
+    @include rectangle(1136px,680px);
+    color:#fff;
+    .title{
+        font-size:35px;
+        margin-bottom:10px;
+        text-align:center;
+    }
+    .detail{
+        line-height: 40px;
+        color:#333;
+        @extend .blur;
+        @include rectangle(100%,100%);
+    }
+    
+}

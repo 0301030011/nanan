@@ -13,9 +13,9 @@
 			</div>
 		</div>
 		<div class="right-group">
-			<persional class="persional"></persional>
+			<persional class="persional" @click.native="landed"></persional>
 			<message class="message"></message>
-			<about class="about"></about>
+			<about class="about" @click.native="aboutus"></about>
 		</div>
 	</div>
 </template>
@@ -30,6 +30,7 @@ import policy from './units/policy'
 import persional from './units/persional'
 import message from './units/message'
 import about from './units/about'
+import router from '../router'
 export default {
   name: 'layout',
   data () {
@@ -47,6 +48,14 @@ export default {
   	policy,
   	message,
   	about
+  },
+  methods:{
+	  landed:()=>{
+		  router.push({path:'/landed'})
+	  },
+	  aboutus:()=>{
+		  router.push({path:'/aboutus'})
+	  }
   }
 }
 </script>

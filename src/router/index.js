@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import layout from '@/components/layout'
 import aboutus from '@/components/aboutus'
 import persionalgo from '@/components/persionalgo'
+import registered from '@/components/registered'
+import landed from '@/components/landed'
 
 Vue.use(Router)
 
@@ -23,6 +25,16 @@ export default new Router({
       path:'/persionalgo',
       name:'persionalgo',
       component: persionalgo
+    },
+    {
+      path:'/registered',
+      name:registered,
+      component:registered
+    },
+    {
+      path:'/landed',
+      name:landed,
+      component:landed
     }
   ]
 })

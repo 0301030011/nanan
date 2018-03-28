@@ -8,10 +8,10 @@
         font-size:25px;
         margin-bottom:10px;
     }
-    ul{
+    .items{
       @include rectangle(100%,87%);
       overflow: scroll;
-      li{
+      .item{
         @include rectangle(100%,89px);
         color:#333;
         background-color: #fff;
@@ -27,6 +27,46 @@
             font-size:18px;
         }
       }
+    }
+    .list{
+        @include rectangle(100%,87%);
+        overflow: scroll;
+        display:flex;
+        // justify-content:space-around;
+        // padding:10px;
+        box-sizing:border-box;
+        flex-wrap:wrap;
+        .man{
+            @include rectangle(18%,45%);
+            margin-left:19px;
+            margin-top:20px;
+            box-sizing:border-box;
+            position: relative;
+            .avatar{
+                @include rectangle(100px,100px);
+                border-radius:50%;
+                background-color: blue;
+                position: absolute;
+                z-index:1;
+                left:50%;
+                margin-left:-50px;
+                background-size:cover;
+            }
+            .info{
+                 @include rectangle(100%,80.6%);
+                 background-color: #fff;
+                 color:#333;
+                 padding:50px 10px 10px;
+                 box-sizing:border-box;
+                 z-index:-1;
+                 margin-top:25%;
+                 .name{
+                    text-align:center;
+                    // @include rectangle(100%,20px);
+
+                 }
+            }
+        }
     }
 }
 

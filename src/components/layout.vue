@@ -5,8 +5,8 @@
 			<weather class="weather"></weather>
 			<div class="center-group-footer">
 				<div class="footer-left">
-					<older class="older"></older>
-					<volunteer class="volunteer"></volunteer>
+					<older class="older" @click.native="olders"></older>
+					<volunteer class="volunteer" @click.native="volunteers"></volunteer>
 					<activity class="activity" @click.native="activities"></activity>
 				</div>
 				<policy class="policy" @click.native="policies"></policy>
@@ -47,7 +47,13 @@ export default {
   	},
   	activities:()=>{
   		router.push({ path: '/activities' })
-  	}
+  	},
+    olders:()=>{
+        router.push({ path: '/olders' })
+    },
+    volunteers:()=>{
+        router.push({ path: '/volunteers' })
+    }
   }
 }
 </script>

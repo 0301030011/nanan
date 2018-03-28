@@ -1,8 +1,8 @@
 <template>
     <div class="content">
         <div class="title">政策展示</div>
-        <ul>
-            <li v-for="policy in policies" @click="go_policy(policy.id)">
+        <ul class="items">
+            <li v-for="policy in policies" @click="go_policy(policy.id)" class="item">
               <div class="item-title">{{ policy.title }}</div>
               <div class="item-content">{{ policy.content }}</div>
             </li>
